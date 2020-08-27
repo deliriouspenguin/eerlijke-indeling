@@ -1,0 +1,88 @@
+<!--
+ Copyright (C) 2020 Delirious Penguin
+ 
+ This file is part of Eerlijke Indeling.
+ 
+ Eerlijke Indeling is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ Eerlijke Indeling is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with Eerlijke Indeling.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Eerlijke Indeling</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <script lang="javascript">
+        function print_page() {
+            window.print();
+        }
+    </script>
+
+    <script type="module">
+        import init from "/wasm.js";
+        init();
+    </script>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/img/logo.jpg" />
+</head>
+
+<body>
+    <div id="content">
+        <div class="container-sm">
+            <div class="row">
+                <div class="col shadow p-5 m-5 bg-white rounded">
+                    <h3>Bezig met laden...</h3>
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border " role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="email" name="email" />
+            <input type="text" name="name" />
+            <textarea class="form-control" name="message"></textarea>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script data-goatcounter="https://eerlijke-indeling.goatcounter.com/count" async
+        src="//gc.zgo.at/count.js"></script>
+</body>
+
+</html>
