@@ -32,5 +32,5 @@ jobs:
       - name: Store static as artifact
         uses: actions/upload-artifact@v1
         with:
-          name: static
+          name: eerlijke-indeling-static
           path: static
